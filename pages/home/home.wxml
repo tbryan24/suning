@@ -1,0 +1,95 @@
+<view class="container">
+    <view class="top_container">
+        <image src="../../images/top_sort.png" class="top_sorts"></image>
+        <view class="top_search_container">
+            <image src="../../images/search-icon3.png" class="top_search_icon"></image>
+            <input class="top_search_input" placeholder="{{placeholder}}"></input>
+        </view>
+        <image src="../../images/top_cart.png" class="top_cart"></image>
+    </view>
+    <scroll-view class="body_container" scroll-y="true">
+        <view class="swiper_container">
+            <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="slideChange">
+                <block wx:for="{{imgUrls}}">
+                    <swiper-item>
+                        <image src="{{item}}" class="slide-image"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="header">
+            <view class="header_item">
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147789988383596285.png" class="header_icon"></image>
+                    <text class="header_text">分类</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147312866702421071.png" class="header_icon"></image>                    
+                    <text class="header_text">大聚惠</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147789989972960898.png" class="header_icon"></image>
+                    <text class="header_text">苏宁超市</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147765584463288142.png" class="header_icon"></image>
+                    <text class="header_text">红孩子母婴</text>
+                </navigator>
+                 <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147790006620384651.png" class="header_icon"></image>
+                    <text class="header_text">服装城</text>
+                </navigator>
+            </view>
+            <view class="header_item">
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147312952840754337.png" class="header_icon"></image>
+                    <text class="header_text">拼购</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147061923888628614.png" class="header_icon"></image>
+                    <text class="header_text">赚钱</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147061924527353384.png" class="header_icon"></image>
+                    <text class="header_text">领砖石</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147790007490534821.png" class="header_icon"></image>
+                    <text class="header_text">身边苏宁</text>
+                </navigator>
+                <navigator url="../sort/sort" class="header_icon_nav">
+                    <image src="../../images/147278465770554348.png" class="header_icon"></image>
+                    <text class="header_text">优惠券</text>
+                </navigator>
+            </view>
+        </view>
+        <view class="advertisement">
+            <image class="adv_title" src="../../images/advertisement_title.png"></image>
+            <view class="adv_line"></view>
+            <view class="adv_content">
+                {{advContent}}
+            </view>
+        </view>
+        <block wx:for="{{bodyarr}}">
+            <view class="body_list">
+                <image src="../../images/zsh.png" class="body_list_icon"></image>
+                <view class="body_list_content">
+                    <view class="body_list_content_itemT">
+                        <image src="../../images/148170977653331257.png"></image>
+                        <view>
+                            <image src="../../images/148162141787557124.png"></image>
+                            <image src="../../images/148137102617857689.png"></image>
+                        </view>
+                    </view>
+                    <view class="body_list_content_itemB">
+                        <image src="../../images/148171665153990513.png"></image>
+                        <image src="../../images/148163975289648683.png"></image>
+                        <image src="../../images/148176648956045590.png"></image>
+                        <image src="../../images/148170579191850111.png"></image>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+</view>

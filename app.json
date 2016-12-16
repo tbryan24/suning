@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/sort/sort",
+    "pages/cart/cart",
+    "pages/center/center",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "苏宁易购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "iconPath":"../../images/footer-icon-01.png",
+      "selectedIconPath":"../../images/footer-icon-01-active.png",
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, {
+      "iconPath":"../../images/footer-icon-02.png",
+      "selectedIconPath":"../../images/footer-icon-02-active.png",
+      "pagePath": "pages/sort/sort",
+      "text": "分类"
+    }, {
+      "iconPath":"../../images/footer-icon-03.png",
+      "selectedIconPath":"../../images/footer-icon-03-active.png",
+      "pagePath": "pages/cart/cart",
+      "text": "购物车"
+    }, {
+      "iconPath":"../../images/footer-icon-04.png",
+      "selectedIconPath":"../../images/footer-icon-04-active.png",
+      "pagePath": "pages/center/center",
+      "text": "我的"
+    }],
+    "color":"#aaa",
+    "selectedColor":"yellow",
+    "backgroundColor":"#353535"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
